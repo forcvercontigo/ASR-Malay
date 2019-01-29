@@ -127,7 +127,7 @@ print(txts)
 for i in txts:
 	#remove repeated showing of txts 
 	sentence_set=sentence(i)
-	#cdivide into 2 csv file,one is transcript and the other is actual sentence
+	#divide into 2 csv files,one is true sentence and the other is actual sentence
 	num,csv1,csv2=sent2list(sentence_set)
 	#convert the first to csv 
 	csv_name=write2csv(num,csv1,i[:-4]+'.csv')
