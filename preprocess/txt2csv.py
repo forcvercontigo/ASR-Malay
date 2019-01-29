@@ -119,12 +119,11 @@ def move2other_folder(csv_name,path):
 	os.remove(csv_name)
 
 #get all txt file path
-
+print("start")
 txts=get_txt(HOME)
-print(txts)
-#print(txts)
 #for every txt file in list txts
 for i in txts:
+	print(i)
 	#remove repeated showing of txts 
 	sentence_set=sentence(i)
 	#divide into 2 csv files,one is true sentence and the other is actual sentence
@@ -139,8 +138,7 @@ for i in txts:
 	path=os.path.split(i)[0].replace('King','King-Actual')
 	#move to new path folder
 	move2other_folder(csv_name,path)
-
-
+print("finish")
 
 
 
